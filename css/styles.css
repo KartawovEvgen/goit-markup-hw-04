@@ -13,6 +13,7 @@
   --footer-bg-color: #2f303a;
 }
 
+}
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
@@ -43,6 +44,7 @@ body {
   width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
+  
 }
 
 .section:last-child {
@@ -78,6 +80,8 @@ body {
   margin-left: 85px;
 }
 
+
+
 /* для новичков */
 /* .site-nav .item{
   margin-right: 50px;
@@ -110,7 +114,10 @@ body {
   color: var(--primary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
+
+  border: 1px solid #FFFFFF;
 }
+
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -134,11 +141,12 @@ body {
 } */
 
 .auth-nav .item {
-  /* display: block;
-  padding-top: 32px;
+  /* display: inline-flex; */
+  /* padding-top: 32px;
   padding-bottom: 32px; */
 }
 .auth-nav .link {
+  display: inline-flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -147,6 +155,10 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   /* outline: 1px solid tomato; */
+}
+
+.link-letter {
+  fill: currentColor;
 }
 
 .auth-nav .link:hover,
@@ -161,16 +173,28 @@ body {
 /* Hero */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  outline: 1px solid black;
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Headerimg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
   text-align: center;
 }
 
 .hero-title {
-  margin-top: 0;
+  /* width: 696px; */
+  /* height: 120px; */
+  margin: 0;
   margin-bottom: 30px;
-  text-align: center;
 
   color: var(--primary-white-color);
-  background-color: var(--text-color);
+  /* background-color: var(--text-color); */
 
   font-weight: 900;
   font-size: 44px;
@@ -204,6 +228,16 @@ body {
   /* background-color: violet; */
 }
 
+
+
+.advantages-svg {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: var(--secondary-bg-color);
+}
+
 .advantages .item {
   /* display: flex;
   flex-wrap: wrap;   */
@@ -211,7 +245,8 @@ body {
   align-items: stretch; */
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
-  align-items: center;
+  /* align-items: center; */
+  
   /* background-color: yellowgreen; */
 }
 
@@ -220,9 +255,7 @@ body {
   /* background-color: turquoise; */
 }
 
-.advantages-image {
-  margin-bottom: 30px;
-}
+
 
 .advantages .advantages-image {
   /* margin-left: 50px; */
@@ -231,7 +264,7 @@ body {
   border-radius: 4px;
   padding: 25px 100px;
   margin-bottom: 30px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .advantages .advantages-title {
@@ -292,6 +325,8 @@ body {
 .flex-our-team .item {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .flex-our-team .item:nth-child(4n) {
@@ -321,9 +356,35 @@ body {
   margin-top: 0;
   margin-bottom: 16px;
 
+  color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+}
+
+.socials-svg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px; 
+  padding: 0;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 50%;
+  color: var(--text-color);
+}
+.our-team .advantages-image {
+  margin-bottom: 30px;
+}
+
+.socials-svg:hover,
+.socials-svg:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.icon-socials{
+  fill: currentColor;
 }
 
 /* Regular customers */
