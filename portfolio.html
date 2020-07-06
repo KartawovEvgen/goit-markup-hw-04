@@ -14,7 +14,9 @@
         <nav class="main-nav">
           <a href="/" class="logo"> <img src="./images/WebStudio.svg" alt="Веб-студия" /></a>
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="item">
+              <a href="" class="link">Студия</a>
+            </li>
             <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
@@ -22,14 +24,23 @@
           <!--Contacts webstudio-->
           <ul class="auth-nav list">
             <li class="item">
-              <a href="mailto:info@devstudio.com" class="link"
-                ><img src="./images/envelope(hover).svg" alt="почта"
-              /></a>
-              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="link-letter" width="16" height="11.2">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                <!-- <img src="./images/envelope(hover).svg" alt="почта"/> -->
+                info@devstudio.com
+              </a>
+              <!-- <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> -->
             </li>
             <li class="item">
-              <a href="tel:+380961111111" class="link"><img src="./images/Vector.svg" alt="телефон" /></a>
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              <!-- <a href="tel:+380961111111" class="link"><img src="./images/Vector.svg" alt="телефон" /></a> -->
+              <a href="tel:+380961111111" class="link">
+                <svg class="link-letter" width="10" height="15">
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
           <!--END Contacts webstudio-->
@@ -38,7 +49,7 @@
       <!--END Contacts webstudio-->
     </header>
     <main>
-      <section class="section">
+      <section class="section portfolio">
         <div class="container">
           <h1 class="portfolio-title">Портфолио</h1>
           <ul class="portfolio list">
@@ -183,18 +194,52 @@
                               <a href=""><img src="./images/Ellipse(3).svg" alt="Логотип linkedin" /></a>
                             </li>
                           </ul> -->
-          <ul class="Social-links list">
-            <li class="item">
-              <a href="" class="link" aria-label="Ссылка на Facebook">Facebook</a>
+          <!-- <ul class="Social-links list">
+                <li class="item">
+                  <a href="" class="link" aria-label="Ссылка на Facebook">Facebook</a>
+                </li>
+                <li class="item">
+                  <a href="" class="link" aria-label="Ссылка на Twitter">Twitter</a>
+                </li>
+                <li class="item">
+                  <a href="" class="link" aria-label="Ссылка на Instagram">Instagram</a>
+                </li>
+                <li class="item">
+                  <a href="" class="link" aria-label="Ссылка на LinkedIn">LinkedIn</a>
+                </li>
+              </ul> -->
+          <ul class="list flex-logo">
+            <!-- <li>
+                                <a href=""><img src="./images/instagram2.svg" alt="Логотип Instagram" /></a>
+                              </li>
+                              <li>
+                                <a href=""><img src="./images/twitter1.svg" alt="Логотип twitter" /></a>
+                              </li>
+                              <li>
+                                <a href=""><img src="./images/facebook1.svg" alt="Логотип facebook" /></a>
+                              </li>
+                              <li>
+                                <a href=""><img src="./images/linkedin1.svg" alt="Логотип linkedin" /></a>
+                              </li> -->
+            <li class="socials-svg svg-footer">
+              <svg class="icon-socials" width="20" height="20">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
             </li>
-            <li class="item">
-              <a href="" class="link" aria-label="Ссылка на Twitter">Twitter</a>
+            <li class="socials-svg svg-footer">
+              <svg class="icon-socials" width="20" height="20">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
             </li>
-            <li class="item">
-              <a href="" class="link" aria-label="Ссылка на Instagram">Instagram</a>
+            <li class="socials-svg svg-footer">
+              <svg class="icon-socials" width="20" height="20">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
             </li>
-            <li class="item">
-              <a href="" class="link" aria-label="Ссылка на LinkedIn">LinkedIn</a>
+            <li class="socials-svg svg-footer">
+              <svg class="icon-socials" width="20" height="20">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -204,10 +249,13 @@
           <b class="addto">подписаться на рассылку</b>
           <div class="flex-footer">
             <input class="input" type="text" name="E-mail" placeholder="E-mail" />
-            <button type="submit" class="button primary">Подписаться</button>
+            <button type="submit" class="button primary">
+              Подписаться<svg class="icon-letter" width="24" height="24">
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </div>
         </div>
-
         <!--END Send e-mail to us -->
         <!-- <p class="Developedby">2020 | Developed by GoIT Students</p> -->
       </div>
